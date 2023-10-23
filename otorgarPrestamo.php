@@ -57,53 +57,55 @@
 
 <body>
     <div class="container-fluid p-0">
-        <!-- Barra de navegación y logotipo -->
-        <div class="row" style="background-color: #F5CAC3;">
-            <div class="col-2">
-                <!-- Mostrar el logotipo -->
-                <img src="./vistas/img/logo_micro.png" alt="Logo" class="w-100" style="height: 100px;">
+        <!-- Barra de navegación -->
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #F5CAC3;">
+            <div class="container-fluid"> <!-- Cambiado a container-fluid para extender la barra -->
+                <a class="navbar-brand" href="./vistas/menu.php">Menu</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="otorgarPrestamo.php">Otorgar Prestamo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nuevoCliente.php">Nuevo Cliente</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="seguimientoPrestamo.php">Seguimiento de Préstamo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="estadoCuenta.php">Estado de Cuenta</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-10" style="background-color: #F5CAC3;">
-                <!-- Barra de navegación -->
-                <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #F5CAC3;">
-                    <div class="container"> <!-- Cambiado a container-fluid para extender la barra -->
-                        <a class="navbar-brand" href="./vistas/menu.php">Menu</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="otorgarPrestamo.php">Otorgar Prestamo</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="nuevoCliente.php">Nuevo Cliente</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="seguimientoPrestamo.php">Seguimiento de Préstamo</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="estadoCuenta.php">Estado de Cuenta</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </div>
+        </nav>
+    </div>
+
+    <div class="row logo-section">
+        <div class="col-2">
+            <!-- Mostrar el logotipo -->
+            <img src="./vistas/img/logo_micro.png" alt="Logo" class="w-100" style="height: 50px;">
+        </div>
+        <div class="col-10 menu-title">
+            <!-- Mostrar el título del menú -->
+            <center><h1></h1></center>
         </div>
     </div>
 
     <!-- banner de la página -->
-    <div class="container-fluid p-0" style="background-color: #F5CAC3;">
-        <div class="row" style="background-color: #F5CAC3;">
-            <div class="col-12">
+    <div class="container-fluid p-0">
+        <div class="row">
+            <div class="col-12 p-0">
                 <!-- Mostrar el banner -->
                 <?php
                 // Ruta de la imagen del banner
                 $ruta_imagen = "./vistas/img/banner.png";
                 ?>
-                <img src="<?php echo $ruta_imagen; ?>" alt="Banner" class="w-100" style="height: 100px;">
+                <img src="<?php echo $ruta_imagen; ?>" alt="Banner" class="w-100">
             </div>
         </div>
     </div>
