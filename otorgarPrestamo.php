@@ -60,11 +60,11 @@
         <div class="row" style="background-color: #D9D9D9;">
             <div class="col-2" style="background-color: #D9D9D9;">
                 <!-- Mostrar el logotipo -->
-                <img src="./vistas/img/logo_micro.png" alt="Logo" class="w-100" style="height: 100px;">
+                <img src="./vistas/img/logo_micro.png" alt="Logo" class="w-100" style="height: 100px; width: 350px;">
             </div>
             <div class="col-10 menu-title">
                 <!-- Barra de navegación -->
-                <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #F5CAC3;">
+                <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #F5CAC3; height: 100px;">
                     <div class="container"> <!-- Cambiado a container-fluid para extender la barra -->
                         <a class="navbar-brand" href="./vistas/menu.php">Menu</a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
