@@ -37,6 +37,7 @@
         /* Alineación a la derecha */
         .navbar {
             float: right;
+            background color: #F5CAC3;
         }
 
         /* Cambio de color del fondo donde va el título */
@@ -70,31 +71,48 @@
             <center><h1>Otorgar de Préstamo</h1></center>
         </div>
     </div>
-    <!-- Barra de navegación-->
-    <nav class="navbar navbar-expand-lg">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="./vistas/menu.php">Menu</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="otorgarPrestamo.php">Otorgar Prestamo</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="nuevoCliente.php">Nuevo Cliente</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="seguimientoPrestamo.php">Seguimiento de Préstamo</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="estadoCuenta.php">Estado de Cuenta</a>
-        </li>
-      </ul>
+    <div class="container-fluid p-0">
+        <!-- Barra de navegación -->
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #F5CAC3;">
+            <div class="container-fluid"> <!-- Cambiado a container-fluid para extender la barra -->
+                <a class="navbar-brand" href="./vistas/menu.php">Menu</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="otorgarPrestamo.php">Otorgar Prestamo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nuevoCliente.php">Nuevo Cliente</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="seguimientoPrestamo.php">Seguimiento de Préstamo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="estadoCuenta.php">Estado de Cuenta</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div><br><br><br>
+
+        <!-- banner de la página -->
+        <div class="container-fluid p-0">
+        <div class="row">
+            <div class="col-12 p-0">
+                <!-- Mostrar el banner -->
+                <?php
+                // Ruta de la imagen del banner
+                $ruta_imagen = "./vistas/img/banner.png";
+                ?>
+                <img src="<?php echo $ruta_imagen; ?>" alt="Banner" class="w-100">
+            </div>
+        </div>
     </div>
-  </div>
-</nav>
 
     <!--BootStrap 5.3 JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
