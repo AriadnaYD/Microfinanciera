@@ -62,9 +62,12 @@
                 <!-- Mostrar el logotipo -->
                 <img src="./vistas/img/logo_micro.png" alt="Logo" class="w-100" style="height: 100px; width: 350px;">
             </div>
-            <div class="col-10 menu-title">
+            <div class="col-8 menu-title" style="display: flex; align-items: center;">
+                <center><h1 style="margin: 0; padding: 0;">Otorgar Préstamo</h1></center>
+            </div>
+            <div class="col-2">
                 <!-- Barra de navegación -->
-                <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #F5CAC3; height: 100px;">
+                <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #F5CAC3;">
                     <div class="container"> <!-- Cambiado a container-fluid para extender la barra -->
                         <a class="navbar-brand" href="./vistas/menu.php">Menu</a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
