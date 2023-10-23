@@ -36,6 +36,17 @@
             text-decoration: none;
         }
 
+        /* Cambio de color del fondo donde va el título */
+        .menu-title {
+            background-color: #D9D9D9;
+        }
+
+        /* Cambio de color del fondo del navegador al hacer clic */
+        .navbar-nav .active > .nav-link {
+            background-color: blue !important;
+            color: white !important;
+        }
+
         /* Ajuste del margen izquierdo del contenido principal */
         .main-content {
             margin-left: -15px; /* Ajusta el margen izquierdo para que coincida con el fondo del navbar */
@@ -47,12 +58,12 @@
 <body>
     <div class="container-fluid p-0">
         <!-- Barra de navegación y logotipo -->
-        <div class="row">
+        <div class="row" style="background-color: #F5CAC3;">
             <div class="col-2">
                 <!-- Mostrar el logotipo -->
                 <img src="./vistas/img/logo_micro.png" alt="Logo" class="w-100" style="height: 100px;">
             </div>
-            <div class="col-10">
+            <div class="col-10" style="background-color: #F5CAC3;">
                 <!-- Barra de navegación -->
                 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #F5CAC3;">
                     <div class="container"> <!-- Cambiado a container-fluid para extender la barra -->
@@ -84,8 +95,8 @@
     </div>
 
     <!-- banner de la página -->
-    <div class="container-fluid p-0">
-        <div class="row">
+    <div class="container-fluid p-0" style="background-color: #F5CAC3;">
+        <div class="row" style="background-color: #F5CAC3;">
             <div class="col-12">
                 <!-- Mostrar el banner -->
                 <?php
