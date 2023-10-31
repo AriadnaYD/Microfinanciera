@@ -47,7 +47,7 @@
             // Ejecución de la consulta
             $resultado->execute(array(":correo" => $correo));
             $login = $resultado->fetch(PDO::FETCH_ASSOC);
-            if (password_verify($clave, $login['clave'])) { 
+            if (password_verify($clave, $login['contraseña'])) { 
                 echo '<script>
                     Swal.fire({
                     icon: "success",
