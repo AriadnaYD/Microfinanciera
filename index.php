@@ -62,7 +62,7 @@
                                             Swal.fire({
                                                 icon: "error",
                                                 title: "¡ERROR!",
-                                                text: "Ingreso Fallido",
+                                                text: "Registro Fallido",
                                                 showConfirmButton: true,
                                                 confirmButtonText: "ACEPTAR"
                                             });

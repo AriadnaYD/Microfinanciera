@@ -35,38 +35,6 @@
     </style>
 </head>
 <body>
-<?php
-        require("../modelo/conexionPDO.php");
-        try {
-            // Verifico los datos del login
-            $correo = htmlentities(addslashes($_POST['correo']));
-            $clave = $_POST['clave'];
-            $sql = "SELECT * FROM t_usuario WHERE correo = :correo";
-            // Preparo la consulta SQL
-            $resultado = $conn->prepare($sql);
-            // Ejecución de la consulta
-            $resultado->execute(array(":correo" => $correo));
-            $login = $resultado->fetch(PDO::FETCH_ASSOC);
-            if (password_verify($clave, $login['contraseña'])) { 
-                echo '<script>
-                    Swal.fire({
-                    icon: "success",
-                    title:"Usuario aceptado",
-                    text: "Registro correcto",
-                    showConfirmButton: true,
-                    confirmButtonText: "Aceptar"
-                }) </script>'; 
-            } else {
-                // Cierra cadena de conexión
-                $query = null;
-                $conn = null;
-                echo "Error de conexión";
-                header("Location: ../../index.php?error=si"); 
-            }
-        } catch (Exception $e) {
-            die($e->getMessage());
-        }
-    ?>
     <!-- Sección del logotipo y título del menú -->
     <div class="row logo-section">
         <div class="col-2">
