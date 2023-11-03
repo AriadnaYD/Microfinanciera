@@ -113,6 +113,32 @@
         </div>
     </div><br><br>
 
+    <!-- Dos columnas con Bootstrap -->
+<div class="container-fluid p-0">
+    <div class="row">
+        <!-- Columna izquierda -->
+        <div class="col-md-6">
+            <!-- Formulario de búsqueda -->
+            <h2>Módulo de Búsqueda de Clientes Activos</h2>
+            <form>
+                <label for="search">Buscar Cliente:</label>
+                <input type="text" id="search" name="search">
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+
+        <!-- Columna derecha -->
+<div class="col-md-6">
+    <!-- Nombre del cliente y botón de reporte -->
+    <h2>Nombre del Cliente</h2>
+    <label for="nombreCliente">Nombre del Cliente:</label><br><br>
+    <button style="margin-top: 10px;">Generar Reporte</button>
+</div>
+
+    </div>
+</div>
+
+
 
     <!--BootStrap 5.3 JS-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
