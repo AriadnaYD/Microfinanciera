@@ -55,18 +55,20 @@
 </head>
 
 <body>
+    <!-- Contenedor de la barra de navegación y logotipo -->
     <div class="container-fluid p-0" style="background-color: #D9D9D9;">
         <!-- Barra de navegación y logotipo -->
         <div class="row" style="background-color: #D9D9D9;">
+            <!-- Logotipo -->
             <div class="col-2" style="background-color: #D9D9D9;">
-                <!-- Mostrar el logotipo -->
                 <img src="./vistas/img/logo_micro.png" alt="Logo" class="w-100" style="height: 100px; width: 350px;">
             </div>
+            <!-- Título -->
             <div class="col-8 menu-title" style="display: flex; align-items: center;">
                 <center><h1 style="margin: 0; padding: 0;">Otorgar Préstamo</h1></center>
             </div>
+            <!-- Barra de navegación -->
             <div class="col-2">
-                <!-- Barra de navegación -->
                 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #F5CAC3;">
                     <div class="container"> <!-- Cambiado a container-fluid para extender la barra -->
                         <a class="navbar-brand" href="./vistas/menu.php">Menu</a>
@@ -74,13 +76,14 @@
                             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
+                        <!-- Lista de navegación -->
                         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
                                     <a class="nav-link active" aria-current="page" href="otorgarPrestamo.php">Otorgar Prestamo</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="nuevoCliente.php">Nuevo Cliente</a>
+                                    <a class="nav-link" href="nuevoCliente.php">Cliente Nuevo</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="seguimientoPrestamo.php">Seguimiento de Préstamo</a>
@@ -96,7 +99,7 @@
         </div>
     </div>
 
-    <!-- banner de la página -->
+    <!-- Banner de la página -->
     <div class="container-fluid p-0">
         <div class="row" >
             <div class="col-12">
@@ -108,44 +111,41 @@
                 <img src="<?php echo $ruta_imagen; ?>" alt="Banner" class="w-100" style="height: 100px;">
             </div>
         </div>
-    </div><br>
+    </div><br><br>
 
-    <!-- Label donde se ingresará la cantidad a validar para el préstamo -->
-<section class="mt-4">
-    <div class="container">
-        <div class="mb-3">
-            <label for="loanAmount" style="font-size: 20px;">Monto del préstamo (en pesos):</label>
-            <input type="number" id="loanAmount" name="loanAmount" min="1000" max="5000">
-            <button onclick="saveToDatabase()" style="font-size: 20px;">Validar y Guardar</button>
+    <!-- Sección para el primer label -->
+    <section class="mt-2">
+        <div class="container">
+            <div class="mb-5">
+                <!-- Primer label -->
+                <label for="loanAmount" style="font-size: 20px;">Monto del préstamo (en pesos):</label>
+                <input type="number" id="loanAmount" name="loanAmount" min="1000" max="5000">
+                <!-- Botón asociado al primer label -->
+                <button onclick="saveToDatabase()" style="font-size: 20px;">Validar y Guardar</button>
+            </div>
         </div>
-    </div>
-</section><br>
+    </section><br>
 
-<!-- Label donde se ingresará el tipo de abono a realizar -->
-<section class="mt-4">
-    <div class="container">
-        <div class="mb-3">
-            <label for="paymentType" style="font-size: 20px;">Tipo de abono a realizar:</label>
-            <select id="paymentType" name="paymentType">
-                <option value="diario">Diario</option>
-                <option value="semanal">Semanal</option>
-                <option value="quincenal">Quincenal</option>
-                <option value="mensual">Mensual</option>
-            </select>
-            <button onclick="calculatePayment()" style="font-size: 20px;">Calcular</button>
+    <!-- Sección para el segundo label -->
+    <section class="mt-2">
+        <div class="container">
+            <div class="mb-5">
+                <!-- Segundo label -->
+                <label for="paymentType" style="font-size: 20px;">Tipo de abono a realizar:</label>
+                <select id="paymentType" name="paymentType">
+                    <option value="diario">Diario</option>
+                    <option value="semanal">Semanal</option>
+                    <option value="quincenal">Quincenal</option>
+                    <option value="mensual">Mensual</option>
+                </select>
+                <!-- Botón asociado al segundo label -->
+                <button onclick="calculatePayment()" style="font-size: 20px;">Calcular</button>
+            </div>
         </div>
-    </div>
-</section>
-
-
+    </section>
 
     <!--BootStrap 5.3 JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vVc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
-        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </body>
-
 </html>
