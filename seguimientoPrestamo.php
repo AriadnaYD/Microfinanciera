@@ -113,8 +113,44 @@
         </div>
     </div><br><br>
 
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Módulo de búsqueda de clientes activos -->
+            <div class="col-md-6 mt-4">
+                <h2>Módulo de Búsqueda de Clientes Activos</h2>
+                <!-- Formulario de búsqueda -->
+                <form>
+                    <label for="search">Buscar Cliente:</label>
+                    <input type="text" id="search" name="search">
+                    <button type="submit">Buscar</button>
+                </form>
+            </div>
 
-    
+            <!-- Módulo de vista para clientes activos con adeudos -->
+            <div class="col-md-6 mt-4">
+                <h2>Vista de Clientes con Adeudos</h2>
+                <!-- Sección de vista de clientes con adeudos -->
+                <div>
+                    <label for="adeudo">Monto del Adeudo Otorgado: </label>
+                    <p>...</p>
+                    <label for="nombre">Nombre del Cliente: </label>
+                    <p>...</p>
+                    <label for="apellidoPaterno">Apellido Paterno del Cliente: </label>
+                    <p>...</p>
+                    <label for="apellidoMaterno">Apellido Materno del Cliente: </label>
+                    <p>...</p>
+                    <label for="fechaAbono">Fecha del Abono: </label>
+                    <p>...</p>
+                    <label for="numAbono">Número del Abono en relación al total de abonos: </label>
+                    <p>...</p>
+                    <label for="abonoCorrespondiente">Abono correspondiente al adeudo: </label>
+                    <p>...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <!--BootStrap 5.3 JS-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
