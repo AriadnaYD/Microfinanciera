@@ -108,7 +108,36 @@
                 <img src="<?php echo $ruta_imagen; ?>" alt="Banner" class="w-100" style="height: 100px;">
             </div>
         </div>
+    </div><br>
+
+    <!-- Label donde se ingresará la cantidad a validar para el préstamo -->
+<section class="mt-4">
+    <div class="container">
+        <div class="mb-3">
+            <label for="loanAmount" style="font-size: 20px;">Monto del préstamo (en pesos):</label>
+            <input type="number" id="loanAmount" name="loanAmount" min="1000" max="5000">
+            <button onclick="saveToDatabase()" style="font-size: 20px;">Validar y Guardar</button>
+        </div>
     </div>
+</section><br>
+
+<!-- Label donde se ingresará el tipo de abono a realizar -->
+<section class="mt-4">
+    <div class="container">
+        <div class="mb-3">
+            <label for="paymentType" style="font-size: 20px;">Tipo de abono a realizar:</label>
+            <select id="paymentType" name="paymentType">
+                <option value="diario">Diario</option>
+                <option value="semanal">Semanal</option>
+                <option value="quincenal">Quincenal</option>
+                <option value="mensual">Mensual</option>
+            </select>
+            <button onclick="calculatePayment()" style="font-size: 20px;">Calcular</button>
+        </div>
+    </div>
+</section>
+
+
 
     <!--BootStrap 5.3 JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
