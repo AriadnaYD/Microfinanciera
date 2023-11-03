@@ -14,14 +14,18 @@ include('../seguimientoPrestamo.php');
             $nombre = obtenerNombreDesdeBaseDeDatos();
             $apellidoPaterno = obtenerApellidoPaternoDesdeBaseDeDatos();
             $apellidoMaterno = obtenerApellidoMaternoDesdeBaseDeDatos();
-            // ... y así sucesivamente para los demás campos
+            $fechaabono = obtenerApellidoMaternoDesdeBaseDeDatos();
+            $numeroabono = obtenerApellidoMaternoDesdeBaseDeDatos();
+            $abonocorrespondiente = obtenerApellidoMaternoDesdeBaseDeDatos();
 
             // Imprimir la información en los respectivos lugares
             echo "<label for='adeudo'>Monto del Adeudo Otorgado: </label><p>" . $adeudo . "</p>";
             echo "<label for='nombre'>Nombre del Cliente: </label><p>" . $nombre . "</p>";
             echo "<label for='apellidoPaterno'>Apellido Paterno del Cliente: </label><p>" . $apellidoPaterno . "</p>";
             echo "<label for='apellidoMaterno'>Apellido Materno del Cliente: </label><p>" . $apellidoMaterno . "</p>";
-            // ... y así sucesivamente para los demás campos
+            echo "<label for='fechaabono'>Fecha del Abono: </label><p>" . $fechaabono . "</p>";
+            echo "<label for='numeroabono'>Número del Abono: </label><p>" . $numeroabono . "</p>";
+            echo "<label for='abonocorrespondiente'>Abono correspondiente al adeudo: </label><p>" . $abonocorrespondiente . "</p>";
         ?>
     </div>
 </div>
