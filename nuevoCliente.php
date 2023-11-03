@@ -114,8 +114,83 @@
     </div><br><br>
 
     <!-- labels para nuevos clientes--->
+<section class="mt-2">
+    <div class="container">
+        <!-- Primera columna: Nombre, Apellido Paterno, Apellido Materno, Dirección, Teléfono, RCF -->
+        <div class="row">
+            <div class="col-6">
+                <!-- Nombre -->
+                <div class="mb-3 d-flex align-items-center">
+                    <label for="nombre" style="font-size: 20px; width: 250px;">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre">
+                </div>
 
-    
+                <!-- Apellido Paterno -->
+                <div class="mb-3 d-flex align-items-center">
+                    <label for="apellidoPaterno" style="font-size: 20px; width: 250px;">Apellido Paterno:</label>
+                    <input type="text" id="apellidoPaterno" name="apellidoPaterno">
+                </div>
+
+                <!-- Apellido Materno -->
+                <div class="mb-3 d-flex align-items-center">
+                    <label for="apellidoMaterno" style="font-size: 20px; width: 250px;">Apellido Materno:</label>
+                    <input type="text" id="apellidoMaterno" name="apellidoMaterno">
+                </div>
+
+                <!-- Dirección -->
+                <div class="mb-3 d-flex align-items-center">
+                    <label for="direccion" style="font-size: 20px; width: 250px;">Dirección:</label>
+                    <input type="text" id="direccion" name="direccion">
+                </div>
+
+                <!-- Teléfono -->
+                <div class="mb-3 d-flex align-items-center">
+                    <label for="telefono" style="font-size: 20px; width: 250px;">Teléfono:</label>
+                    <input type="text" id="telefono" name="telefono">
+                </div>
+
+                <!-- RCF -->
+                <div class="mb-3 d-flex align-items-center">
+                    <label for="rcf" style="font-size: 20px; width: 250px;">RCF:</label>
+                    <input type="text" id="rcf" name="rcf">
+                </div>
+            </div>
+
+            <!-- Segunda columna: Clave Única de Registro de Población, Empresa o lugar de trabajo, Correo, Contraseña, Botón para guardar -->
+            <div class="col-6">
+                <!-- Clave Única de Registro de Población -->
+                <div class="mb-3 d-flex align-items-center">
+                    <label for="curp" style="font-size: 20px; width: 250px;">Clave Única de Registro de Población:</label>
+                    <input type="text" id="curp" name="curp">
+                </div>
+
+                <!-- Empresa o lugar de trabajo -->
+                <div class="mb-3 d-flex align-items-center">
+                    <label for="trabajo" style="font-size: 20px; width: 250px;">Empresa o lugar de trabajo:</label>
+                    <input type="text" id="trabajo" name="trabajo">
+                </div>
+
+                <!-- Correo -->
+                <div class="mb-3 d-flex align-items-center">
+                    <label for="correo" style="font-size: 20px; width: 250px;">Correo:</label>
+                    <input type="email" id="correo" name="correo">
+                </div>
+
+                <!-- Contraseña -->
+                <div class="mb-3 d-flex align-items-center">
+                    <label for="contrasena" style="font-size: 20px; width: 250px;">Contraseña:</label>
+                    <input type="password" id="contrasena" name="contrasena">
+                </div>
+
+                <!-- Botón para guardar -->
+                <div class="mb-3 d-flex align-items-center">
+                    <button onclick="saveNewClient()" style="font-size: 20px;">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
     <!--BootStrap 5.3 JS-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
