@@ -71,7 +71,7 @@
                                             <div class="card-header">Agregar Usuario</div>
                                             <div class="card-body">
                                                 <form name="formulario_fmt" method="POST"
-                                                    action="../controlador/validaRegistro.php" enctype="application/x-www-form-urlencoded">
+                                                    action="../administracion/validaRegistro.php" enctype="application/x-www-form-urlencoded">
                                                     <div class="mb-1">
                                                         <label for="inputEmail" class="form-label">Correo electrónico</label>
                                                         <input type="email" name="usuario" class="form-control"

@@ -53,20 +53,18 @@
                                 <div class="card-body py-5 px-md-5">
 
                                     <form action="./vistas/menu.php" method="POST">
-                                        <?php
-                                        error_reporting(E_ALL ^ E_NOTICE ^ E_WARNING);
-                                        if ($_GET["error"] == "si") {
-                                            echo ".";
-                                            echo '<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>';
+                                    <?php
+                                        // Verifica si se ha enviado un error desde el script de validación
+                                        if (isset($_GET['error']) && $_GET['error'] === 'si') {
                                             echo '<script>
                                             Swal.fire({
-                                                icon: "error",
-                                                title: "¡ERROR!",
-                                                text: "Registro Fallido",
-                                                showConfirmButton: true,
-                                                confirmButtonText: "ACEPTAR"
+                                            icon: "error",
+                                            title: "¡ERROR!",
+                                            text: "Inicio de sesión fallido",
+                                            showConfirmButton: true,
+                                            confirmButtonText: "Aceptar"
                                             });
-                                        </script>';
+                                            </script>';
                                         }
                                         ?>
                                         <!-- Email input -->
