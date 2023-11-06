@@ -99,7 +99,7 @@
                                         <!-- New user section -->
                                         <div class="row mb-4">
                                             <div class="col">
-                                                <p>¿Nuevo usuario? <a href="./nuevousuario.php">Regístrate aquí</a></p>
+                                                <p>¿Nuevo usuario? <a href="registroUsuario.php">Regístrate aquí</a></p>
                                             </div>
                                         </div>
 
