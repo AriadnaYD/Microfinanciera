@@ -15,3 +15,4 @@ try {
     exit("Error: " . $e->getMessage());
 }
 return $conn;
+?>

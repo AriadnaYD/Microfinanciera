@@ -149,27 +149,11 @@
                     <input type="text" id="telefono" name="telefono">
                 </div>
 
-                <!-- RCF -->
-                <div class="mb-3 d-flex align-items-center">
-                    <label for="rcf" style="font-size: 20px; width: 250px;">RCF:</label>
-                    <input type="text" id="rcf" name="rcf">
-                </div>
             </div>
 
             <!-- Segunda columna: Clave Única de Registro de Población, Empresa o lugar de trabajo, Correo, Contraseña, Botón para guardar -->
             <div class="col-6">
-                <!-- Clave Única de Registro de Población -->
-                <div class="mb-3 d-flex align-items-center">
-                    <label for="curp" style="font-size: 20px; width: 250px;">Clave Única de Registro de Población:</label>
-                    <input type="text" id="curp" name="curp">
-                </div>
-
-                <!-- Empresa o lugar de trabajo -->
-                <div class="mb-3 d-flex align-items-center">
-                    <label for="trabajo" style="font-size: 20px; width: 250px;">Empresa o lugar de trabajo:</label>
-                    <input type="text" id="trabajo" name="trabajo">
-                </div>
-
+                
                 <!-- Correo -->
                 <div class="mb-3 d-flex align-items-center">
                     <label for="correo" style="font-size: 20px; width: 250px;">Correo:</label>

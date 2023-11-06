@@ -96,6 +96,12 @@
                                                 <a href="#!">Forgot password?</a>
                                             </div>
                                         </div>
+                                        <!-- New user section -->
+                                        <div class="row mb-4">
+                                            <div class="col">
+                                                <p>¿Nuevo usuario? <a href="./nuevousuario.php">Regístrate aquí</a></p>
+                                            </div>
+                                        </div>
 
                                         <!-- Submit button -->
                                         <button type="submit" class="btn btn-primary btn-block mb-4">Ingresar</button>

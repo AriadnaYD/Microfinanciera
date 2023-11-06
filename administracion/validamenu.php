@@ -21,7 +21,7 @@ require("../modelo/conexionPDO.php");
         $correo = $_POST['correo'];
         $contraseña = $_POST['contraseña'];
         echo $correo . ' ' . $contraseña;
-        $sql = "SELECT * FROM t_usuario WHERE correo = :correo";
+        $sql = "SELECT * FROM usuario WHERE correo = :correo";
         //preparo la consulta SQL
         $resultado = $conn->prepare($sql);
         //ejecucion de la consulta
