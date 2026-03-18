@@ -49,4 +49,4 @@ Aplicación web desarrollada en PHP para la gestión de una microfinanciera, per
 
 1. Clonar el repositorio:
 ```bash
-git clone [URL_DEL_REPOSITORIO]
+git clone https://github.com/AriadnaYD/Microfinanciera.git
